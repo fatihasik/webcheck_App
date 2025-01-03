@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "ENERJI ANA SAYFA",
+    "url": "https://www.enerji.gov.tr/anasayfa",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 2,
+    "name": "MTA",
+    "url": "https://www.mta.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 3,
+    "name": "BOTAS",
+    "url": "https://www.botas.gov.tr",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 4,
+    "name": "ELTEMTEK",
+    "url": "https://www.eltemtek.com.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 5,
+    "name": "TASKOMURU",
+    "url": "https://www.taskomuru.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 6,
+    "name": "TENMAK",
+    "url": "https://www.tenmak.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 7,
+    "name": "BIL",
+    "url": "http://www.bil.gov.tr",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 8,
+    "name": "CLI TKI",
+    "url": "https://cli.tki.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 9,
+    "name": "ELI TKI",
+    "url": "https://eli.tki.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 10,
+    "name": "EPDK",
+    "url": "https://www.epdk.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 11,
+    "name": "EPIAS",
+    "url": "https://www.epias.com.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 12,
+    "name": "ETIMADEN",
+    "url": "https://www.etimaden.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 13,
+    "name": "EUAS",
+    "url": "https://www.euas.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 14,
+    "name": "NDK",
+    "url": "https://www.ndk.org.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 15,
+    "name": "TEDAS",
+    "url": "https://www.tedas.gov.tr/tr/1",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 16,
+    "name": "TEIAS",
+    "url": "https://www.teias.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 17,
+    "name": "TEMSAN",
+    "url": "https://www.temsan.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 18,
+    "name": "TKI",
+    "url": "https://www.tki.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 19,
+    "name": "TPAO",
+    "url": "https://www.tpao.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 20,
+    "name": "GLI TKI",
+    "url": "https://gli.tki.gov.tr/",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 21,
+    "name": "PORTAL ENERJI",
+    "url": "http://portal.enerji.gov.tr",
+    "status": "up",
+    "downtime": 0,
+    "firstDownTime": null,
+    "lastDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 22,
+    "name": "PORTAL TEIAS",
+    "url": "http://portal.teias.gov.tr",
+    "status": "up",
+    "downtime": 0,
+    "firstDownTime": null,
+    "lastDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 23,
+    "name": "TPYS TEIAS",
+    "url": "https://tpys.teias.gov.tr/tpys/app/login.htm",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 24,
+    "name": "TPAO MAIL",
+    "url": "https://signon.tpao.gov.tr/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fmail.tpao.gov.tr%2fowa%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fowa%252f&wct=2024-12-30T15%3a13%3a25Z",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 25,
+    "name": "BOTAS KURUMSAL",
+    "url": "http://kurumsal.botas.gov.tr/my.policy",
+    "status": "up",
+    "downtime": 0,
+    "firstDownTime": null,
+    "lastDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 26,
+    "name": "TÜNAŞ",
+    "url": "https://tunas.gov.tr/tr",
+    "status": "up",
+    "downtime": 0,
+    "lastDownTime": null,
+    "firstDownTime": null,
+    "errorType": null
+  },
+  {
+    "id": 27,
+    "name": "dnm",
+    "url": "https://www.google.com/",
+    "status": "up",
+    "downtime": 0,
+    "firstDownTime": null,
+    "lastDownTime": null,
+    "errorType": null
+  }
+]
