@@ -57,7 +57,7 @@ const App = () => {
   const [newSiteName, setNewSiteName] = useState('');
   const [newSiteUrl, setNewSiteUrl] = useState('');
   const [editingSite, setEditingSite] = useState(null);
-  const [editingUrl, setEditingUrl] = useState('');  // Düzenlenen URL'yi saklamak için
+  const [editingUrl, setEditingUrl] = useState('');  
 
   const theme = darkMode ? darkTheme : lightTheme;
 
@@ -74,8 +74,8 @@ const App = () => {
 
   useEffect(() => {
     fetchSiteStatus();
-    const interval = setInterval(fetchSiteStatus, 30000); // 30 saniyede bir verileri güncelle
-    return () => clearInterval(interval); // Bileşen unmount edildiğinde interval'ı temizle
+    const interval = setInterval(fetchSiteStatus, 30000); 
+    return () => clearInterval(interval); 
   }, []);
 
   const handleAddWebsite = async () => {
@@ -116,7 +116,7 @@ const App = () => {
 
   const handleEditWebsite = (site) => {
     setEditingSite(site.id);
-    setEditingUrl(site.url);  // Mevcut URL'yi düzenleme alanına koy
+    setEditingUrl(site.url);  
   };
 
   const handleSaveWebsite = async (site) => {
@@ -202,12 +202,12 @@ const App = () => {
   const getColor = (site) => {
     if (site.status === 'down') {
       const downTimeMinutes = (Date.now() - new Date(site.firstDownTime)) / 60000;
-      if (downTimeMinutes < 30) return '#ff3333'; // Açık kırmızı
-      if (downTimeMinutes < 60) return '#ff9999'; // Orta kırmızı
-      if (downTimeMinutes < 120) return '#ff6666'; // Koyu kırmızı
-      return '#ff3333'; // En koyu kırmızı
+      if (downTimeMinutes < 30) return '#ff3333'; 
+      if (downTimeMinutes < 60) return '#ff9999'; 
+      if (downTimeMinutes < 120) return '#ff6666'; 
+      return '#ff3333'; 
     }
-    return 'inherit'; // Diğer durumlar için normal renk
+    return 'inherit'; 
   };
 
   const rowStyle = (site) => ({
