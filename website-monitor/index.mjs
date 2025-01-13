@@ -17,7 +17,6 @@ const app = express();
 const PORT = 5000;
 const webSitesFilePath = path.join(__dirname, 'webSites.json');
 
-// Middleware
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -26,7 +25,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// Helper Functions
 const loadWebsites = () => {
   const data = fs.readFileSync(webSitesFilePath);
   return JSON.parse(data);
@@ -40,9 +38,6 @@ const generateUniqueId = (websites) => {
   return Math.max(...websites.map(site => site.id)) + 1 || 1;
 };
 
-// API Endpoints
-
-// Yeni bir site ekle
 app.post('/api/websites', (req, res) => {
   const { name, url } = req.body;
   const websites = loadWebsites();
@@ -64,7 +59,6 @@ app.post('/api/websites', (req, res) => {
   res.status(201).json(newSite);
 });
 
-// Bir siteyi sil
 app.delete('/api/websites/:id', (req, res) => {
   const { id } = req.params;
   let websites = loadWebsites();
@@ -79,13 +73,11 @@ app.delete('/api/websites/:id', (req, res) => {
   res.status(200).json({ message: 'Website silindi.' });
 });
 
-// Tüm siteleri döndür
 app.get('/api/websites', (req, res) => {
   const websites = loadWebsites();
   res.json(websites);
 });
 
-// Bir sitenin URL'sini güncelle
 app.put('/api/websites/:id', async (req, res) => {
   const { id } = req.params;
   const { url } = req.body;
@@ -100,12 +92,10 @@ app.put('/api/websites/:id', async (req, res) => {
   saveWebsites(websites);
   res.status(200).json(websites[siteIndex]);
 
-  // URL güncellendikten sonra yeni URL'yi kontrol et
   const site = websites[siteIndex];
   await checkSingleWebsite(site);
 });
 
-// Sağlık kontrolü
 app.get('/', (req, res) => {
   res.send("Web Site İzleme API: Site durumu almak için /api/websites kullanın.");
 });
@@ -120,7 +110,7 @@ const checkSingleWebsite = async (site) => {
       timeout: {
         request: 10000
       },
-      followRedirect: false, // Manuel yönlendirme takibi
+      followRedirect: false, 
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
         // 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.62 Safari/537.36',
@@ -138,7 +128,7 @@ const checkSingleWebsite = async (site) => {
         timeout: {
           request: 10000
         },
-        followRedirect: false, // Daha fazla yönlendirmeyi takip etmek için
+        followRedirect: false, 
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
         },
@@ -207,7 +197,6 @@ const checkSingleWebsite = async (site) => {
     await sendEmailNotification(site);
   }
 
-  // Status güncellemeleri geri JSON dosyasına kaydediliyor
   const websites = loadWebsites();
   const siteIndex = websites.findIndex((s) => s.id === site.id);
   if (siteIndex !== -1) {
@@ -218,7 +207,6 @@ const checkSingleWebsite = async (site) => {
 
 
 
-// Tüm siteleri periyodik olarak kontrol et
 const checkWebsites = () => {
   const websites = loadWebsites();
   websites.forEach((site) => {
@@ -229,7 +217,6 @@ const checkWebsites = () => {
 checkWebsites();
 setInterval(checkWebsites, 30000);
 
-// Sunucuyu başlat
 app.listen(PORT, () => {
   console.log(`Sunucu http://localhost:${PORT} adresinde çalışıyor.`);
 });
