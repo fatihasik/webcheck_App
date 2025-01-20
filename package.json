@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "cross-env": "^7.0.3",
+    "express": "^4.21.2",
+    "firebase": "^11.2.0",
+    "formik": "^2.4.6",
+    "got": "^14.4.5",
     "moment-timezone": "^0.5.46",
     "nodemailer": "^6.9.16"
   }
